@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 using System.Text.RegularExpressions;
 using VNTextPatch.Shared;
 using VNTextPatch.Shared.Scripts;
@@ -14,6 +15,8 @@ namespace VNTextPatch
     {
         public static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
+
             Options options = Options.Parse(args, out args);
             if (args.Length == 0)
             {

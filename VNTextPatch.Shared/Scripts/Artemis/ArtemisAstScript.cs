@@ -183,8 +183,8 @@ namespace VNTextPatch.Shared.Scripts.Artemis
                     case LuaTable table:
                         if (table.Count == 1 && table[0] is LuaString cmdName && cmdName.Value == "rt2")
                             text.AppendLine();
-                        else
-                            SerializeCommand(table, text);
+                        //else
+                        //    SerializeCommand(table, text);
 
                         break;
                 }

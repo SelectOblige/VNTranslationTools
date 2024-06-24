@@ -57,7 +57,7 @@ namespace VNTextPatch.Shared
 
                 string textScriptName;
                 if (!string.IsNullOrEmpty(_inputOutputScript.Extension))
-                    textScriptName = Path.ChangeExtension(inputScriptName, _textScript.Extension);
+                    textScriptName = Path.ChangeExtension(inputScriptName, (_inputOutputScript.Extension == ".ast" ? ".ast" : "") + _textScript.Extension);
                 else
                     textScriptName = inputScriptName + _textScript.Extension;
 

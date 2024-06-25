@@ -190,6 +190,8 @@ namespace VNTextPatch.Shared.Scripts.Artemis
                 }
             }
 
+            if (text.ToString() == "\u3000\r\n") return "Unused";
+
             return text.ToString().Trim();
         }
 

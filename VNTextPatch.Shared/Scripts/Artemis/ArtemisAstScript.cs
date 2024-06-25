@@ -74,7 +74,7 @@ namespace VNTextPatch.Shared.Scripts.Artemis
                         break;
 
                     case LuaTable table:
-                        text = ProportionalWordWrapper.Default.Wrap(text, CommandRegex);
+                        //text = ProportionalWordWrapper.Default.Wrap(text, CommandRegex);
                         DeserializeMessage(text, table);
                         break;
                 }
